@@ -1,24 +1,26 @@
 const rootElem = document.querySelector('#root');
 
-// completed == true
-// 	? (card.style.backgroundColor = green)
-// 	: (card.style.backgroundColor = gray);
-
 fetch('https://jsonplaceholder.typicode.com/todos')
 	.then((resp) => resp.json())
 	.then((json) => render(json));
 
 const render = (json) => {
-	json.forEach(({ title, completed }) => {
+	const tasks = json.map(({ title, completed }) => {
 		const card = document.createElement('div');
 		const titleElem = document.createElement('p');
 		const statusElem = document.createElement('p');
 
-		titleElem.innerText = title;
-		statusElem.innerText = `status: ${completed}`;
+		const status = completed ? 'done' : 'not done';
+		const background = completed ? 'lightgreen' : 'lightgray';
+
+		titleElem.innerText = `Task: ${title}`;
+		statusElem.innerText = `Status: ${status}`;
 
 		card.classList.add('card');
+		card.style.backgroundColor = background;
+
 		card.append(titleElem, statusElem);
-		rootElem.append(card);
+		return card;
 	});
+	rootElem.append(...tasks);
 };
