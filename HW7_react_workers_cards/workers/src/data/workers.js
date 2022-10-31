@@ -75,5 +75,6 @@ export const workers = [
 		position: 'Java Developer',
 		in_office: true,
 		// avatar: './media/face_4.jpeg',
+		tasks: [],
 	},
 ];

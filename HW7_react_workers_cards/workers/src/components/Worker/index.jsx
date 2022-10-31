@@ -1,5 +1,6 @@
 import React from 'react';
 import s from './index.module.css';
+import Taskscontainer from '../Taskscontainer';
 
 export default function Worker({
 	id,
@@ -8,6 +9,7 @@ export default function Worker({
 	position,
 	in_office,
 	avatar,
+	tasks,
 }) {
 	const card_style = {
 		backgroundColor: in_office ? 'lightgreen' : 'lightgray',
@@ -23,6 +25,7 @@ export default function Worker({
 			<p>Lastname: {lastname}</p>
 			<p>Position: {position}</p>
 			<img src={img_url} alt='worker' />
+			<Taskscontainer tasks={tasks} />
 		</div>
 	);
 }
