@@ -7,11 +7,14 @@ export default function Worker({
 	lastname,
 	position,
 	in_office,
+	avatar,
 }) {
 	const card_style = {
 		backgroundColor: in_office ? 'lightgreen' : 'lightgray',
 		color: in_office ? '' : 'blue',
 	};
+
+	const img_url = avatar ?? './media/no_face.png'; //оператор нулевого слияния ??
 
 	return (
 		<div className={s.worker_card} style={card_style}>
@@ -19,6 +22,7 @@ export default function Worker({
 			<p>Firstname: {firstname}</p>
 			<p>Lastname: {lastname}</p>
 			<p>Position: {position}</p>
+			<img src={img_url} alt='worker' />
 		</div>
 	);
 }
