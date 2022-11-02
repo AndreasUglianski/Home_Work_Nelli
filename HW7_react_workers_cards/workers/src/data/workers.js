@@ -14,6 +14,7 @@ export const workers = [
 			{
 				id: 2,
 				title: 'Drink coffee',
+				done: false,
 			},
 			{
 				id: 3,
@@ -32,6 +33,7 @@ export const workers = [
 			{
 				id: 1,
 				title: 'Check shedule',
+				done: true,
 			},
 			{
 				id: 2,
