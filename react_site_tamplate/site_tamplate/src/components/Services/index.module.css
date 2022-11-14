@@ -14,3 +14,15 @@
 	margin-bottom: 100px;
 	font-family: 'Merriweather', serif;
 }
+
+@media (max-width: 1100px) {
+	.services_container {
+		grid-template-columns: 1fr;
+	}
+	.services_block {
+		padding: 50px 0 80px 0;
+	}
+	.services_block h2 {
+		margin-bottom: 63px;
+	}
+}

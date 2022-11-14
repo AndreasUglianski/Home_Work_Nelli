@@ -27,3 +27,13 @@ h2 {
 	font-weight: 900;
 	font-family: 'Merriweather', serif;
 }
+
+@media (max-width: 1100px) {
+	.wrapper {
+		max-width: 630px;
+	}
+
+	.subheader {
+		display: none;
+	}
+}

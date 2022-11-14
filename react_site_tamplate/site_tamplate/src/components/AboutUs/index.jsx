@@ -5,7 +5,7 @@ import s from './index.module.css';
 
 export default function AboutUs() {
 	return (
-		<section className={['wrapper', s.about_us_aection].join(' ')}>
+		<section className={['wrapper', s.about_us_section].join(' ')}>
 			<div>
 				<p className='subheader'>О нас</p>
 				<h2>
