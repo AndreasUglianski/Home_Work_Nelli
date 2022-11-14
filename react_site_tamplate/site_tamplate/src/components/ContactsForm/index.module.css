@@ -1,0 +1,45 @@
+.contacts_form {
+	width: 540px;
+	display: flex;
+	flex-direction: column;
+	padding: 13px 0;
+}
+
+.contacts_form input {
+	background-color: transparent;
+	border-color: transparent;
+	border-bottom: 1px solid white;
+	width: 255px;
+	padding: 15px 0;
+	color: #bdbdbd;
+}
+
+.firstname_and_lastname {
+	display: flex;
+	justify-content: space-between;
+	gap: 30px;
+	margin-bottom: 35px;
+}
+
+.contacts_form textarea {
+	background-color: transparent;
+	border-color: transparent;
+	border-bottom: 1px solid white;
+	width: 100%;
+	height: 120px;
+	padding: 15px 0;
+	resize: none;
+	color: #bdbdbd;
+	outline: none;
+}
+.contacts_form button {
+	background-color: #005fa3;
+	color: white;
+	width: 270px;
+	height: 60px;
+	border: none;
+	font-size: 18px;
+	font-weight: 400;
+	align-self: end;
+	margin: 50px 0;
+}
